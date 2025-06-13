@@ -20,159 +20,235 @@
     percent - шанс создания
     col - количество
 
-    Actual for: Industrial Upgrade 1.12.2, v.2.4 (build #20)
+    Actual for: IndustrialUpgrade-1.12.2-3.3.0.38
 */
 
-## - AlloySmelter:
-mods.industrialupgrade.AlloySmelter.addRecipe(output, container, fill, temperature);
-mods.industrialupgrade.AlloySmelter.removeRecipe(output);
+##-------------AlloySmelter-------------##
+mods.industrialupgrade.AlloySmelter.addRecipe(IItemStack_output, IIngredient, IIngredient, temperature);
+mods.industrialupgrade.AlloySmelter.removeRecipe(IItemStack);
 
-## - AdvAlloySmelter:
-mods.industrialupgrade.AdvAlloySmelter.addRecipe(output, container, fill, fill1, temperature);
-mods.industrialupgrade.AdvAlloySmelter.removeRecipe(output);
+##-------------AdvAlloySmelter-------------##
+mods.industrialupgrade.AdvAlloySmelter.addReCipe(IItemStack_output, llngredient, llngredient, llngredient, temperature);
+mods.industrialupgrade.AdvAlloySmelter.removeRecipe(IItemStack);
 
-## - Air Transformer
-mods.industrialupgrade.AerAssembler.addRecipe(output, fill, matter);
-mods.industrialupgrade.AerAssembler.removeRecipe(output);
+##-------------impalloysmelter-------------##
+mods.industrialupgrade.impalloysmelter.addRecipe(IItemStack_output, IIngredient, IIngredient, IIngredient, IIngredient, temperature);
+mods.industrialupgrade.impalloysmelter.removeRecipe(IItemStack);
 
-## - Aqua Transformer
-mods.industrialupgrade.AquaAssembler.addRecipe(output, fill, matter);
-mods.industrialupgrade.AquaAssembler.removeRecipe(output);
+##-------------peralloysmelter-------------##
+mods.industrialupgrade.peralloysmelter.addRecipe(IItemStack_output, IIngredient, IIngredient, IIngredient, IIngredient, IIngredient, temperature);
+mods.industrialupgrade.peralloysmelter.removeRecipe(IItemStack);
 
-## - Canning
-mods.industrialupgrade.Canning.addRecipe(output, container, fill);
-mods.industrialupgrade.Canning.removeRecipe(output);
+##-------------AerAssembler-------------##
+mods.industrialupgrade.AerAssembler.addRecipe(IItemStack_output, IIngredient, double);
+mods.industrialupgrade.AerAssembler.removeRecipe(IItemStack);
 
-## - Centrifuge
-mods.industrialupgrade.centrifuge.addRecipe(container, temperature, IItemStack... output);
-mods.industrialupgrade.centrifuge.remove(IItemStack output);
+##-------------AquaAssembler-------------##
+mods.industrialupgrade.AquaAssembler.addRecipe(IItemStack_output, IIngredient, double);
+mods.industrialupgrade.AquaAssembler.removeRecipe(IItemStack);
 
-## - Chemical Factory
-mods.industrialupgrade.ChemicalFactory.addRecipe(output, container, container1, liquidStack);
-mods.industrialupgrade.ChemicalFactory.remove(output);
+##-------------DefaultAssembler-------------##
+mods.industrialupgrade.DefaultAssembler.addRecipe(IItemStack_output, IIngredient, double);
+mods.industrialupgrade.DefaultAssembler.removeRecipe(IItemStack);
 
-## - Quarry Combined Crushed Recipe
-mods.industrialupgrade.QuarryCombCrushedRecipe.addRecipe(output);
-mods.industrialupgrade.QuarryCombCrushedRecipe.remove(input);
+##-------------EarthAssembler-------------##
+mods.industrialupgrade.EarthAssembler.addRecipe(IItemStack_output, IIngredient, double);
+mods.industrialupgrade.EarthAssembler.removeRecipe(IItemStack);
 
-## - Quarry Crushed Recipe
-mods.industrialupgrade.QuarryCrushedRecipe.addRecipe(output);
-mods.industrialupgrade.QuarryCrushedRecipe.remove(input);
+##-------------EndAssembler-------------##
+mods.industrialupgrade.EndAssembler.addRecipe(IItemStack_output, IIngredient, double);
+mods.industrialupgrade.EndAssembler.removeRecipe(IItemStack);
 
-## - Quarry Furnace Recipe
-mods.industrialupgrade.QuarryFurnaceRecipe.addRecipe(output);
-mods.industrialupgrade.QuarryFurnaceRecipe.remove(input);
+##-------------NetherAssembler-------------##
+mods.industrialupgrade.NetherAssembler.addRecipe(IItemStack_output, IIngredient, double);
+mods.industrialupgrade.NetherAssembler.removeRecipe(IItemStack);
 
-## - Quarry Recipe
-mods.industrialupgrade.QuarryRecipe.addRecipe(output);
-mods.industrialupgrade.QuarryRecipe.remove(input);
+##-------------Canning-------------##
+mods.industrialupgrade.Canning.addRecipe(IItemStack_output, IIngredient, IIngredient);
+mods.industrialupgrade.Canning.removeRecipe(IItemStack);
 
-## - Comb Macerator
-mods.industrialupgrade.CombMacerator.addRecipe(output, container);
-mods.industrialupgrade.CombMacerator.remove(output);
+##-------------SolidCanning-------------##
+mods.industrialupgrade.SolidCanning.addRecipe(IItemStack_output, ILiquidStack, IIngredient);
+mods.industrialupgrade.SolidCanning.removeRecipe(IItemStack);
 
-## - Compressor:
-mods.industrialupgrade.compressor.addRecipe(output, container);
-mods.industrialupgrade.compressor.remove(output);
+##-------------ChemicalFactory-------------##
+mods.industrialupgrade.ChemicalFactory.addRecipe(IItemStack_output, IIngredient, IIngredient, ILiquidStack);
+mods.industrialupgrade.ChemicalFactory.remove(IItemStack);
 
-## - Cutting:
-mods.industrialupgrade.cutting.addRecipe(output, container);
-mods.industrialupgrade.cutting.remove(output);
+##-------------CombMacerator-------------##
+mods.industrialupgrade.CombMacerator.addRecipe(IItemStack_output, IIngredient);
+mods.industrialupgrade.CombMacerator.remove(IItemStack);
 
-## - Default Assembler
-mods.industrialupgrade.DefaultAssembler.addRecipe(output, fill, matter);
-mods.industrialupgrade.DefaultAssembler.removeRecipe(output);
+##-------------DoubleMolecularTransformer-------------##
+mods.industrialupgrade.DoubleMolecularTransformer.addRecipe(IItemStack_output, IIngredient, IIngredient, energy);
+mods.industrialupgrade.DoubleMolecularTransformer.removeRecipe(IItemStack);
 
-## - Double Molecular Transformer:
-mods.industrialupgrade.DoubleMolecularTransformer.addRecipe(output, container, fill, energy);
-mods.industrialupgrade.DoubleMolecularTransformer.removeRecipe(output);
+##-------------Enrich-------------##
+mods.industrialupgrade.Enrich.addRecipe(IItemStack_output, IIngredient, IIngredient);
+mods.industrialupgrade.Enrich.removeRecipe(IItemStack);
 
-## - Earth Assembler
-mods.industrialupgrade.EarthAssembler.addRecipe(output, fill, matter);
-mods.industrialupgrade.EarthAssembler.removeRecipe(output);
+##-------------Fermer-------------##
+mods.industrialupgrade.Fermer.addRecipe(IItemStack_output, IIngredient);
+mods.industrialupgrade.Fermer.addRecipe(IItemStack_output, IIngredient, int);
+mods.industrialupgrade.Fermer.addRecipe(IItemStack_output, IIngredient, int, boolean);
+mods.industrialupgrade.Fermer.remove(IItemStack);
 
-## - End Transformer:
-mods.industrialupgrade.EndAssembler.addRecipe(output, fill, matter);
-mods.industrialupgrade.EndAssembler.removeRecipe(output);
+##-------------GenMicrochip-------------##
+mods.industrialupgrade.GenMicrochip.addRecipe(IItemStack_output, IIngredient, IIngredient, IIngredient, IIngredient, IIngredient, int);
+mods.industrialupgrade.GenMicrochip.removeRecipe(IItemStack);
 
-## - Enrich:
-mods.industrialupgrade.Enrich.addRecipe(output, container, fill);
-mods.industrialupgrade.Enrich.removeRecipe(output);
+##-------------GenRods-------------##
+mods.industrialupgrade.GenRods.addRecipe(IItemStack_output, IIngredient, IIngredient, IIngredient, IIngredient, IIngredient, IIngredient);
+mods.industrialupgrade.GenRods.removeRecipe(IItemStack);
 
-## - Extractor:
-mods.industrialupgrade.extractor.addRecipe(output, container);
-mods.industrialupgrade.extractor.remove(output);
+##-------------MatterRecipe-------------##
+mods.industrialupgrade.MatterRecipe.addRecipe(IItemStack_output, double, double, double, double, double, double, double, double);
+mods.industrialupgrade.MatterRecipe.remove(IItemStack);
 
-## - Extruder:
-mods.industrialupgrade.extruding.addRecipe(output, container);
-mods.industrialupgrade.extruding.remove(output);
+##-------------MineralSeparator-------------##
+mods.industrialupgrade.MineralSeparator.addRecipe(IItemStack_output[], IIngredient, temperature, int[]);
+mods.industrialupgrade.MineralSeparator.removeRecipe(IItemStack);
 
-## - Fermer:
-mods.industrialupgrade.Fermer.addRecipe(output, container);
-mods.industrialupgrade.Fermer.addRecipe(output, container, time);
-mods.industrialupgrade.Fermer.addRecipe(output, container, time, consume);
-mods.industrialupgrade.Fermer.remove(output);
+##-------------MolecularTransformer-------------##
+mods.industrialupgrade.MolecularTransformer.addOreRecipe(IItemStack_output, IIngredient, energy);
+mods.industrialupgrade.MolecularTransformer.addRecipe(IItemStack_output, IIngredient, energy);
+mods.industrialupgrade.MolecularTransformer.removeRecipe(IItemStack);
 
-## - Electric Furnace:
-mods.industrialupgrade.electricfurnace.addRecipe(output, container, experience);
-mods.industrialupgrade.electricfurnace.remove(output);
+##-------------PlacticMachine-------------##
+mods.industrialupgrade.PlacticMachine.addRecipe(ILiquidStack_input, IIngredient, IItemStack);
+mods.industrialupgrade.PlacticMachine.remove(IItemStack);
 
-## - Gearing
-mods.industrialupgrade.gearing.addRecipe(output, container);
-mods.industrialupgrade.gearing.remove(output);
+##-------------QuarryCombCrushedRecipe-------------##
+mods.industrialupgrade.QuarryCombCrushedRecipe.addRecipe(IItemStack_output);
+mods.industrialupgrade.QuarryCombCrushedRecipe.remove(IItemStack);
 
-## - Gen Microchip:
-mods.industrialupgrade.GenMicrochip.addRecipe(output, container, fill, fill1, fill2, fill3, temperature);
-mods.industrialupgrade.GenMicrochip.removeRecipe(output);
+##-------------QuarryCrushedRecipe-------------##
+mods.industrialupgrade.QuarryCrushedRecipe.addRecipe(IItemStack_output);
+mods.industrialupgrade.QuarryCrushedRecipe.remove(IItemStack);
 
-## - Gen Rods
-mods.industrialupgrade.GenRods.addRecipe(output, container, fill, fill1, fill2, fill3, fill4);
-mods.industrialupgrade.GenRods.removeRecipe(output);
+##-------------QuarryFurnaceRecipe-------------##
+mods.industrialupgrade.QuarryFurnaceRecipe.addRecipe(IItemStack_output);
+mods.industrialupgrade.QuarryFurnaceRecipe.remove(IItemStack);
 
-## - Macerator:
-mods.industrialupgrade.macerator.addRecipe(output, container);
-mods.industrialupgrade.macerator.remove(output);
+##-------------QuarryRecipe-------------##
+mods.industrialupgrade.QuarryRecipe.addRecipe(IItemStack_output);
+mods.industrialupgrade.QuarryRecipe.remove(IItemStack);
 
-## - MatterRecipe:
-mods.industrialupgrade.MatterRecipe.addRecipe(output, matter, sunmatter, aquamatter, nethermatter, nightmatter, earthmatter, endmatter, aermatter);
-mods.industrialupgrade.MatterRecipe.remove(input);
+##-------------Sunnarium-------------##
+mods.industrialupgrade.Sunnarium.addRecipe(IItemStack_output, IIngredient, IIngredient, IIngredient, IIngredient);
+mods.industrialupgrade.Sunnarium.removeRecipe(IItemStack);
 
-## - Mineral Separator
-mods.industrialupgrade.MineralSeparator.addRecipe(IItemStack[] output, input, temperature, int... col);
-mods.industrialupgrade.MineralSeparator.removeRecipe(output);
+##-------------Synthesis-------------##
+mods.industrialupgrade.Synthesis.addRecipe(IItemStack_output, IIngredient, IIngredient, int);
+mods.industrialupgrade.Synthesis.removeRecipe(IItemStack);
 
-## - MolecularTransformer:
-mods.industrialupgrade.MolecularTransformer.addRecipe(output, ingredient, energy);
-mods.industrialupgrade.MolecularTransformer.addOreRecipe(output, ingredient, energy);
-mods.industrialupgrade.MolecularTransformer.removeRecipe(output);
+##-------------UURecipe-------------##
+mods.industrialupgrade.UURecipe.addRecipe(IItemStack, double);
 
-## - Nether Assembler
-mods.industrialupgrade.NetherAssembler.addRecipe(output, fill, matter);
-mods.industrialupgrade.NetherAssembler.removeRecipe(output);
+##-------------advoilrefiner-------------##
+mods.industrialupgrade.advoilrefiner.addRecipe(ILiquidStack_input, ILiquidStack, ILiquidStack);
+mods.industrialupgrade.advoilrefiner.remove(ILiquidStack);
 
-## - Ore Washing
-mods.industrialupgrade.orewashing.addRecipe(container, IItemStack... output);
-mods.industrialupgrade.orewashing.remove(output);
+##-------------centrifuge-------------##
+mods.industrialupgrade.centrifuge.addRecipe(IIngredient_output, temperature, IItemStack[]);
+mods.industrialupgrade.centrifuge.remove(IItemStack);
 
-## - Plactic Machine
-mods.industrialupgrade.PlacticMachine.addRecipe(output, container, liquidStack);
-mods.industrialupgrade.PlacticMachine.remove(output);
+##-------------compressor-------------##
+mods.industrialupgrade.compressor.addRecipe(IItemStack_output, IIngredient);
+mods.industrialupgrade.compressor.remove(IItemStack);
 
-## - Rolling
-mods.industrialupgrade.rolling.addRecipe(output, container);
-mods.industrialupgrade.rolling.remove(output);
+##-------------cutting-------------##
+mods.industrialupgrade.cutting.addRecipe(IItemStack_output, IIngredient);
+mods.industrialupgrade.cutting.remove(IItemStack);
 
-## - Solid Canning
-mods.industrialupgrade.SolidCanning.addRecipe(output, container, fill);
-mods.industrialupgrade.SolidCanning.removeRecipe(output);
+##-------------electricfurnace-------------##
+mods.industrialupgrade.electricfurnace.addRecipe(IItemStack_output, IIngredient, float);
+mods.industrialupgrade.electricfurnace.remove(IItemStack);
 
-## - Sunnarium
-mods.industrialupgrade.Sunnarium.addRecipe(output, container, fill, fill1, fill2);
-mods.industrialupgrade.Sunnarium.removeRecipe(output);
+##-------------electrolyzer-------------##
+mods.industrialupgrade.electrolyzer.addRecipe(ILiquidStack_input, ILiquidStack, ILiquidStack);
+mods.industrialupgrade.electrolyzer.remove(ILiquidStack);
 
-## - Synthesis:
-mods.industrialupgrade.Synthesis.addRecipe(output, container, fill, percent);
-mods.industrialupgrade.Synthesis.removeRecipe(output);
+##-------------extractor-------------##
+mods.industrialupgrade.extractor.addRecipe(IItemStack_output, IIngredient);
+mods.industrialupgrade.extractor.remove(IItemStack);
 
-## - UURecipe
-mods.industrialupgrade.UURecipe.addRecipe(output, col);
+##-------------extruding-------------##
+mods.industrialupgrade.extruding.addRecipe(IItemStack_output, IIngredient);
+mods.industrialupgrade.extruding.remove(IItemStack);
+
+##-------------fluid_mixer-------------##
+mods.industrialupgrade.fluid_mixer.addRecipe(ILiquidStack_input, ILiquidStack, ILiquidStack, ILiquidStack);
+mods.industrialupgrade.fluid_mixer.remove(ILiquidStack);
+
+##-------------fluidadapter-------------##
+mods.industrialupgrade.fluidadapter.addRecipe(IItemStack_output, IItemStack, ILiquidStack, ILiquidStack);
+mods.industrialupgrade.fluidadapter.remove(ILiquidStack, IItemStack);
+
+##-------------fluidintegrator-------------##
+mods.industrialupgrade.fluidintegrator.addRecipe(IItemStack_output, IItemStack, ILiquidStack, ILiquidStack);
+mods.industrialupgrade.fluidintegrator.remove(ILiquidStack, IItemStack);
+
+##-------------fluidseparator-------------##
+mods.industrialupgrade.fluidseparator.addRecipe(ILiquidStack_input, ILiquidStack, ILiquidStack);
+mods.industrialupgrade.fluidseparator.remove(ILiquidStack);
+
+##-------------gas_combiner-------------##
+mods.industrialupgrade.gas_combiner.addRecipe(ILiquidStack_input, ILiquidStack, ILiquidStack);
+
+##-------------gearing-------------##
+mods.industrialupgrade.gearing.addRecipe(IItemStack_output, IIngredient);
+mods.industrialupgrade.gearing.remove(IItemStack);
+
+##-------------impoilrefiner-------------##
+mods.industrialupgrade.impoilrefiner.addRecipe(ILiquidStack_input, ILiquidStack, ILiquidStack);
+mods.industrialupgrade.impoilrefiner.remove(ILiquidStack);
+
+##-------------itemdivider-------------##
+mods.industrialupgrade.itemdivider.addRecipe(IItemStack_output, IItemStack, ILiquidStack, ILiquidStack);
+mods.industrialupgrade.itemdivider.remove(ILiquidStack, IItemStack);
+
+##-------------itemdividerfluids-------------##
+mods.industrialupgrade.itemdividerfluids.addRecipe(IItemStack_output, ILiquidStack, ILiquidStack);
+mods.industrialupgrade.itemdividerfluids.remove(ILiquidStack, IItemStack);
+
+##-------------laser-------------##
+mods.industrialupgrade.laser.addRecipe(IItemStack_output, IIngredient);
+mods.industrialupgrade.laser.remove(IItemStack);
+
+##-------------macerator-------------##
+mods.industrialupgrade.macerator.addRecipe(IItemStack_output, IIngredient);
+mods.industrialupgrade.macerator.remove(IItemStack);
+
+##-------------oilrefiner-------------##
+mods.industrialupgrade.oilrefiner.addRecipe(ILiquidStack_input, ILiquidStack, ILiquidStack);
+mods.industrialupgrade.oilrefiner.remove(ILiquidStack);
+
+##-------------orewashing-------------##
+mods.industrialupgrade.orewashing.addRecipe(IIngredient_output, IItemStack[]);
+mods.industrialupgrade.orewashing.remove(IItemStack);
+
+##-------------polymerizer-------------##
+mods.industrialupgrade.polymerizer.addRecipe(ILiquidStack_input, ILiquidStack);
+mods.industrialupgrade.polymerizer.remove(ILiquidStack);
+
+##-------------refrigeratorfluids-------------##
+mods.industrialupgrade.refrigeratorfluids.addRecipe(ILiquidStack_input, ILiquidStack);
+mods.industrialupgrade.refrigeratorfluids.remove(ILiquidStack);
+
+##-------------rolling-------------##
+mods.industrialupgrade.rolling.addRecipe(IItemStack_output, IIngredient);
+mods.industrialupgrade.rolling.remove(IItemStack);
+
+##-------------solidelectrolyzer-------------##
+mods.industrialupgrade.solidelectrolyzer.addRecipe(IItemStack_output, IItemStack, ILiquidStack, ILiquidStack);
+mods.industrialupgrade.solidelectrolyzer.remove(ILiquidStack, IItemStack);
+
+##-------------solidfluidmixer-------------##
+mods.industrialupgrade.solidfluidmixer.addRecipe(IItemStack_output, ILiquidStack, ILiquidStack, ILiquidStack);
+mods.industrialupgrade.solidfluidmixer.remove(ILiquidStack, IItemStack);
+
+##-------------vein-------------##
+mods.industrialupgrade.vein.addChanceOre(String, IItemStack, int, int);
+mods.industrialupgrade.vein.addVein(String);
+mods.industrialupgrade.vein.removeOre(Block);
