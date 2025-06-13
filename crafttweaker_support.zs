@@ -94,7 +94,7 @@ mods.industrialupgrade.Fermer.addRecipe(IItemStack_output, IIngredient, int, boo
 mods.industrialupgrade.Fermer.remove(IItemStack);
 
 ##-------------GenMicrochip-------------##
-mods.industrialupgrade.GenMicrochip.addRecipe(IItemStack_output, IIngredient, IIngredient, IIngredient, IIngredient, IIngredient, int);
+mods.industrialupgrade.GenMicrochip.addRecipe(IItemStack_output, IIngredient, IIngredient, IIngredient, IIngredient, IIngredient, temperature);
 mods.industrialupgrade.GenMicrochip.removeRecipe(IItemStack);
 
 ##-------------GenRods-------------##
