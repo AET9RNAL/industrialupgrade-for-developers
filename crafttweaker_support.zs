@@ -40,27 +40,27 @@ mods.industrialupgrade.peralloysmelter.addRecipe(IItemStack_output, IIngredient,
 mods.industrialupgrade.peralloysmelter.removeRecipe(IItemStack);
 
 ##-------------AerAssembler-------------##
-mods.industrialupgrade.AerAssembler.addRecipe(IItemStack_output, IIngredient, double);
+mods.industrialupgrade.AerAssembler.addRecipe(IItemStack_output, IIngredient, matter);
 mods.industrialupgrade.AerAssembler.removeRecipe(IItemStack);
 
 ##-------------AquaAssembler-------------##
-mods.industrialupgrade.AquaAssembler.addRecipe(IItemStack_output, IIngredient, double);
+mods.industrialupgrade.AquaAssembler.addRecipe(IItemStack_output, IIngredient, matter);
 mods.industrialupgrade.AquaAssembler.removeRecipe(IItemStack);
 
 ##-------------DefaultAssembler-------------##
-mods.industrialupgrade.DefaultAssembler.addRecipe(IItemStack_output, IIngredient, double);
+mods.industrialupgrade.DefaultAssembler.addRecipe(IItemStack_output, IIngredient, matter);
 mods.industrialupgrade.DefaultAssembler.removeRecipe(IItemStack);
 
 ##-------------EarthAssembler-------------##
-mods.industrialupgrade.EarthAssembler.addRecipe(IItemStack_output, IIngredient, double);
+mods.industrialupgrade.EarthAssembler.addRecipe(IItemStack_output, IIngredient, matter);
 mods.industrialupgrade.EarthAssembler.removeRecipe(IItemStack);
 
 ##-------------EndAssembler-------------##
-mods.industrialupgrade.EndAssembler.addRecipe(IItemStack_output, IIngredient, double);
+mods.industrialupgrade.EndAssembler.addRecipe(IItemStack_output, IIngredient, matter);
 mods.industrialupgrade.EndAssembler.removeRecipe(IItemStack);
 
 ##-------------NetherAssembler-------------##
-mods.industrialupgrade.NetherAssembler.addRecipe(IItemStack_output, IIngredient, double);
+mods.industrialupgrade.NetherAssembler.addRecipe(IItemStack_output, IIngredient, matter);
 mods.industrialupgrade.NetherAssembler.removeRecipe(IItemStack);
 
 ##-------------Canning-------------##
@@ -89,8 +89,8 @@ mods.industrialupgrade.Enrich.removeRecipe(IItemStack);
 
 ##-------------Fermer-------------##
 mods.industrialupgrade.Fermer.addRecipe(IItemStack_output, IIngredient);
-mods.industrialupgrade.Fermer.addRecipe(IItemStack_output, IIngredient, int);
-mods.industrialupgrade.Fermer.addRecipe(IItemStack_output, IIngredient, int, boolean);
+mods.industrialupgrade.Fermer.addRecipe(IItemStack_output, IIngredient, time);
+mods.industrialupgrade.Fermer.addRecipe(IItemStack_output, IIngredient, time, consume);
 mods.industrialupgrade.Fermer.remove(IItemStack);
 
 ##-------------GenMicrochip-------------##
